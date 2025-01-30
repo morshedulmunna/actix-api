@@ -3,26 +3,6 @@
 version = 4
 
 [[package]]
-name = "actix-backend"
-version = "0.1.0"
-dependencies = [
- "actix-cors",
- "actix-identity",
- "actix-limitation",
- "actix-rt",
- "actix-web",
- "bcrypt",
- "dotenv",
- "env_logger",
- "jsonwebtoken",
- "serde",
- "serde_json",
- "sqlx",
- "tokio",
- "uuid",
-]
-
-[[package]]
 name = "actix-codec"
 version = "0.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2132,6 +2112,26 @@ dependencies = [
  "num-traits",
  "thiserror",
  "time",
+]
+
+[[package]]
+name = "skill-hub-api"
+version = "0.1.0"
+dependencies = [
+ "actix-cors",
+ "actix-identity",
+ "actix-limitation",
+ "actix-rt",
+ "actix-web",
+ "bcrypt",
+ "dotenv",
+ "env_logger",
+ "jsonwebtoken",
+ "serde",
+ "serde_json",
+ "sqlx",
+ "tokio",
+ "uuid",
 ]
 
 [[package]]

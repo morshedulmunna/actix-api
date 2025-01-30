@@ -14,17 +14,5 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
 
-  backend:
-    build: .
-    container_name: actix_backend
-    restart: always
-    environment:
-      DATABASE_URL: postgres://admin:password@db:5432/actixdb
-      JWT_SECRET: supersecretkey
-    ports:
-      - "8080:8080"
-    depends_on:
-      - db
-
 volumes:
   pgdata:
